@@ -1,8 +1,12 @@
 # dupeNumbers
-def findTheDuplicate(numbers):
+def function(numbers):
     res = 0    
-    # Your code here ...
-    #
+    for i, n in enumerate(numbers):
+        for m in numbers[i+1:]:
+            if m == n:
+                res = n
+                break
+    
     return res
 
 

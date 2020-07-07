@@ -1,5 +1,5 @@
 # dupeNumbers
-def function(numbers):
+def findTheDuplicate(numbers):
     res = 0    
     # Your code here ...
     #
@@ -15,7 +15,7 @@ def runTest(numbers):
 
 
 def start():
-    runTest([1, 2, 3])
-    runTest([1, 3, 2])
+    runTest([1, 2, 3, 2])
+    runTest([1, 3, 2, 1, 5, 6])
 
 start()

@@ -1,8 +1,15 @@
 # dupeNumbers
 def findTheDuplicate(numbers):
     res = 0    
-    # Your code here ...
-    #
+    def findTheDuplicate(numbers):
+    res = 0
+    numDict = {}
+    for n in numbers:
+       if n in numDict:
+           res = n
+           break
+       else:
+           numDict[n] = n
     return res
 
 
